@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#colour{
+    font-size: 100px;
+    font-style: oblique;
+    
+}
