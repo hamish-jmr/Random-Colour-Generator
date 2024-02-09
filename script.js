@@ -3,8 +3,11 @@ backgroundColour = "#" + ("000000" + backgroundColour).slice(-6);
 document.body.style.backgroundColor = backgroundColour;
 
 if (backgroundColour === "") {
-    // Add in if background color is dark, then invert the h1
+    // TODO Add in if background color is dark, then invert the h1
 } else {
   let colourID = document.getElementById("colour");
   colourID.innerHTML = backgroundColour.toUpperCase();
 }
+
+// TODO Make text copy to clipboard when clicked on
+// TODO Add other values to select (RGB etc.)
