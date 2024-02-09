@@ -11,7 +11,11 @@ if (backgroundColour === "") {
 
 function copyToClipboard() {
   navigator.clipboard.writeText(backgroundColour);
-  console.log("Copied the text: " + backgroundColour);
+
+  // Confirmation message
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
 
 function pageRefresh() {
